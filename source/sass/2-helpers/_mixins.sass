@@ -1,2 +1,5 @@
-@mixin sectionPadding
-  padding: 60px 0
+=sectionPadding($padding)
+  padding: $padding
+
+//Mixin called through:   #hero
+                            +sectionPadding(60px 0)
