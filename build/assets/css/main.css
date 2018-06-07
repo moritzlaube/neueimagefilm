@@ -485,8 +485,7 @@ html {
   transition: all ease-in-out 250ms; }
 
 body {
-  background: #b0e7fa;
-  color: black;
+  background: #d5efee;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -606,7 +605,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
   font-weight: 500; }
 
 .gigantic {
@@ -615,18 +613,22 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px; }
 
 .huge, h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
   line-height: 1.05;
-  color: #027D92; }
+  text-transform: uppercase;
+  color: #027D92;
+  margin: 1rem auto 0; }
   @media only screen and (max-width: 680px) {
     .huge, h1 {
       font-size: 44px; } }
 
 .large, h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.14;
   color: #027D92;
-  margin: 0.8rem auto; }
+  margin: 0.8rem auto 0; }
   @media only screen and (max-width: 680px) {
     .large, h2 {
       font-size: 32px; } }
@@ -738,5 +740,8 @@ hr {
   transform: translateZ(0px) scale(1); }
 
 #products {
+  background-image: url(assets/img/nif-logo-bg.svg);
+  background-size: cover;
   height: 1000px;
-  margin: 0; }
+  padding: 4rem 0;
+  text-align: center; }
