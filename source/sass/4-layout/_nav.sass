@@ -1,0 +1,21 @@
+.main-nav
+  display: flex
+  margin: 0
+  padding: 0
+
+  li
+    list-style: none
+    &:first-child
+      margin-right: auto
+
+  a
+    color: $primary-text
+    display: block
+    text-decoration: none
+    text-transform: uppercase
+    &:not(.nav-logo)
+      padding: 1rem 2rem
+
+  .nav-logo
+    margin-top: 1rem
+    width: 20rem
