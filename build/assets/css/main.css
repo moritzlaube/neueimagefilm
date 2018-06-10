@@ -558,8 +558,7 @@ html {
 }
 
 body {
-  background: #b0e7fa;
-  color: black;
+  background: #E2FAFF;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -585,7 +584,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 0.4rem 2rem;
   margin-top: 1.5rem;
   color: #fff;
   text-align: center;
@@ -601,6 +600,8 @@ input[type="button"] {
   cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover, .button:active, .button:focus,
@@ -626,7 +627,7 @@ input[type="button"]:focus {
 .downArrow {
   position: absolute;
   top: 90vh;
-  left: 49%;
+  left: 50%;
 }
 
 .bounce {
@@ -664,26 +665,16 @@ input[type="button"]:focus {
   }
 }
 
-a {
-  color: #0074D9;
-  text-decoration: none;
-  outline: 0;
-}
-
-a:hover, a:focus {
-  color: #F012BE;
-}
-
 ::-moz-selection {
-  background: #FFF498;
+  background: #FFCC66;
 }
 
 ::selection {
-  background: #FFF498;
+  background: #FFCC66;
 }
 
 ::-moz-selection {
-  background: #FFF498;
+  background: #FFCC66;
 }
 
 img::-moz-selection {
@@ -699,14 +690,13 @@ img::-moz-selection {
 }
 
 body {
-  -webkit-tap-highlight-color: #FFF498;
+  -webkit-tap-highlight-color: #FFCC66;
 }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
   font-weight: 500;
 }
 
@@ -717,9 +707,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .huge, h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
   line-height: 1.05;
+  text-transform: uppercase;
   color: #027D92;
+  margin: 1rem auto 0;
 }
 
 @media only screen and (max-width: 680px) {
@@ -729,10 +722,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .large, h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.14;
   color: #027D92;
-  margin: 0.8rem auto;
+  margin: 0.8rem auto 0;
 }
 
 @media only screen and (max-width: 680px) {
@@ -771,6 +765,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  color: #027D92;
   margin: 0 0 1rem 0;
   font-size: 1rem;
 }
@@ -789,6 +784,38 @@ hr {
   clear: both;
   margin: 10px 0 30px;
   height: 0;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav li:first-child {
+  margin-right: auto;
+}
+
+.main-nav a {
+  color: #027D92;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:not(.nav-logo) {
+  padding: 1rem 2rem;
+}
+
+.main-nav .nav-logo {
+  margin-top: 1rem;
+  width: 20rem;
 }
 
 .parallax {
@@ -872,7 +899,74 @@ hr {
   transform: translateZ(0px) scale(1);
 }
 
-#products {
-  height: 1000px;
+.cards {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.card {
+  background: #FFF;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+  margin: 0.6rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 340px;
+  flex: 0 1 340px;
+}
+
+.card:hover, .card:active, .card:focus {
+  outline: 0;
+  -webkit-transform: translateY(-2px) translateX(-2px);
+  transform: translateY(-2px) translateX(-2px);
+  cursor: pointer;
+  -webkit-box-shadow: 14px 14px 10px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 14px 14px 10px -10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background: #027D92;
+}
+
+.card-header h2 {
+  color: #FFF;
+  font-size: 1.4rem;
+  text-align: right;
+  padding: 1rem 1rem 1.5rem 0rem;
   margin: 0;
+}
+
+.card-header img {
+  float: left;
+  max-width: 100px;
+}
+
+.card-content p {
+  margin: 0;
+  padding: 1rem 1.5rem;
+}
+
+#products {
+  background: url("../img/nif-logo-bg.svg") no-repeat;
+  background-size: cover;
+  background-color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#products .wrapper .subline {
+  margin: 2rem auto;
+  width: 70%;
 }

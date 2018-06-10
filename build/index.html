@@ -10,10 +10,12 @@
 	<meta name=”robots” content=”index,follow”>
   <title>Title goes here</title>
 	<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="jquery.wordrotator.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
+<!-- Parallax Section -->
 	<div class="parallax">
 		<header>
 	    <div class="parallax__layer parallax__layer__0">
@@ -31,8 +33,8 @@
 
 <!-- Neue Imagefilm Logo -->
 			<div class="header-logo">
-					<img src="assets/img/neueimagefilm-logo@2x.png" />
-					<h2 id="type">Wir können Filme.</h2>
+					<img src="assets/img/neueimagefilm-logo@2x.png" alt="Neue Imagefilm Logo">
+					<h2>Wir können <span id="myWords"></span>.</h2>
 					<button type="button" name="Kontakt">Kontakt</button>
 			</div>
 
@@ -42,13 +44,114 @@
 			</div>
 		</header>
 
-<!-- page content wrapped in parallax div -->
+<!-- PAGE CONTENT wrapped in parallax div -->
 		<div class="page-content">
-			<section id="products">
 
+<!-- NAVIGATION
+			<nav>
+				<div class="wrapper">
+					<ul class="main-nav">
+						<li><a href="#" class="nav-logo"><img src="assets/img/neueimagefilm-logo@2x.png" alt="Neue Imagefilm Logo"></a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#" class="contact">Link</a></li>
+					</ul>
+				</div>
+			</nav>
+-->
+<!-- #PRODUCTS -->
+			<section id="products">
+				<div class="wrapper">
+
+					<h1>Strategie. Konzeption. Umsetzung.</h1>
+					<h2>Wir begleiten Ihren Film von der ersten Idee bis zur Fertigstellung</h2>
+					<div class="subline">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquid rem, doloremque quos at, magni culpa fuga vitae assumenda natus modi laudantium impedit tenetur temporibus excepturi pariatur, quis sed, repellendus odio repudiandae totam amet voluptates! A ipsum adipisci ullam, quo reprehenderit repellendus est eius atque quas temporibus? Ex, assumenda, doloremque!</p>
+					</div>
+					<div class="cards">
+						<div class="card imagefilm">
+							<div class="card-header">
+								<img src="assets/img/imagefilm-thumb.png" alt="Icon für Imagefilm">
+								<h2>Imagefilm</h2>
+							</div>
+							<div class="card-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas natus vel eveniet. Quos earum non optio corporis, iste asperiores?</p>
+							</div>
+						</div>
+
+						<div class="card werbespot">
+							<div class="card-header">
+								<img src="assets/img/werbespot-thumb.png" alt="Icon für Werbespot und TV-Spot">
+								<h2>Werbespot</h2>
+							</div>
+							<div class="card-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas natus vel eveniet. Quos earum non optio corporis, iste asperiores?</p>
+							</div>
+						</div>
+
+
+						<div class="card videomarketing">
+							<div class="card-header">
+								<img src="assets/img/video-marketing-thumb.png" alt="Icon für Video-Marketing">
+								<h2>Video-Marketing</h2>
+							</div>
+							<div class="card-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas natus vel eveniet. Quos earum non optio corporis, iste asperiores?</p>
+							</div>
+						</div>
+
+
+						<div class="card erklaerfilm">
+							<div class="card-header">
+								<img src="assets/img/erklaerfilm-thumb.png" alt="Icon für Erklärfilm">
+								<h2>Erklärfilm</h2>
+							</div>
+							<div class="card-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas natus vel eveniet. Quos earum non optio corporis, iste asperiores?</p>
+							</div>
+						</div>
+
+
+						<div class="card produktfilm">
+							<div class="card-header">
+								<img src="assets/img/produktfilm-thumb.png" alt="Icon für Produktfilm">
+								<h2>Produktfilm</h2>
+							</div>
+							<div class="card-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas natus vel eveniet. Quos earum non optio corporis, iste asperiores?</p>
+							</div>
+						</div>
+
+
+						<div class="card recruitingfilm">
+							<div class="card-header">
+								<img src="assets/img/recruiting-thumb.png" alt="Icon für Recruitingfilm">
+								<h2>Recruitingfilm</h2>
+							</div>
+							<div class="card-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas natus vel eveniet. Quos earum non optio corporis, iste asperiores?</p>
+							</div>
+						</div>
+
+						</div>
+
+
+
+
+					</div>
 			</section>
 
+
+
+
+
+
+
+
 		</div>
+
+
+
 
 
 
@@ -58,6 +161,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 <!-- MyScripts -->
+
 
 </body>
 </html>
