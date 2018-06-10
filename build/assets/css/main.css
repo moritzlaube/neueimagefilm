@@ -974,28 +974,35 @@ hr {
 
 #cta {
   background: #027D92;
-  height: 247px;
 }
 
 #cta img {
-  height: 287px;
+  max-height: 288px;
+  width: auto;
   bottom: 0;
   right: 0;
   position: absolute;
 }
 
 .cta-content {
-  padding: 0;
+  padding: 1rem 1rem;
+  height: 247px;
+  width: 50%;
 }
 
 .cta-content h2, .cta-content p {
   color: #FFF;
 }
 
+.cta-content h2 {
+  margin-bottom: 1rem;
+}
+
 .cta-content button {
   background: #FFF;
   color: #027D92;
   font-size: .8rem;
+  margin-top: 0;
 }
 
 .flex {
