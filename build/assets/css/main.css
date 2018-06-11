@@ -921,7 +921,8 @@ hr {
   border: 1px solid #DDD;
   -webkit-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
-  margin: 0.6rem;
+  margin: 0.7rem;
+  border-bottom-right-radius: 20px;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 340px;
   flex: 0 1 340px;
@@ -969,4 +970,41 @@ hr {
 #products .wrapper .subline {
   margin: 2rem auto;
   width: 70%;
+}
+
+#cta {
+  background: #027D92;
+}
+
+#cta img {
+  max-height: 288px;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.cta-content {
+  padding: 1rem 1rem;
+  height: 247px;
+  width: 50%;
+}
+
+.cta-content h2, .cta-content p {
+  color: #FFF;
+}
+
+.cta-content h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-content button {
+  background: #FFF;
+  color: #027D92;
+  font-size: .8rem;
+  margin-top: 0;
+}
+
+.flex {
+  position: relative;
 }
