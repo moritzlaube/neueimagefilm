@@ -922,7 +922,6 @@ hr {
   -webkit-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
   margin: 0.7rem;
-  border-bottom-right-radius: 20px;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 340px;
   flex: 0 1 340px;
@@ -1007,4 +1006,43 @@ hr {
 
 .flex {
   position: relative;
+}
+
+#whoweare {
+  background-color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+#whoweare .wrapper .subline {
+  margin: 2rem auto;
+  width: 70%;
+}
+
+.staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.staff .avatar {
+  padding: 0 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.staff .avatar span {
+  font-size: 0.75rem;
+}
+
+p.avatar-name {
+  line-height: 1rem;
 }
