@@ -628,6 +628,8 @@ input[type="button"]:focus {
   position: absolute;
   top: 90vh;
   left: 50%;
+  -webkit-transform: translateX(-14px);
+  transform: translateX(-14px);
 }
 
 .bounce {
@@ -849,8 +851,8 @@ hr {
   position: absolute;
   left: 50vw;
   top: -40vh;
-  -webkit-transform: translateZ(-200px) translateX(-400px) scale(2.5);
-  transform: translateZ(-200px) translateX(-400px) scale(2.5);
+  -webkit-transform: translateZ(-200px) translateX(-50%) scale(2.5);
+  transform: translateZ(-200px) translateX(-50%) scale(2.5);
   text-align: center;
 }
 
