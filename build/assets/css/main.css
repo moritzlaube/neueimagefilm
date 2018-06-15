@@ -820,6 +820,14 @@ hr {
   width: 20rem;
 }
 
+footer {
+  background: #cce5e9;
+}
+
+footer i {
+  color: #027D92;
+}
+
 .parallax {
   -webkit-perspective: 100px;
   perspective: 100px;
