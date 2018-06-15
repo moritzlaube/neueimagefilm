@@ -628,8 +628,8 @@ input[type="button"]:focus {
   position: absolute;
   top: 90vh;
   left: 50%;
-  -webkit-transform: translateX(-14px);
-  transform: translateX(-14px);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .bounce {
