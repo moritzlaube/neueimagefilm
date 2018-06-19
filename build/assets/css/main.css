@@ -1046,6 +1046,77 @@ footer a {
   padding: 1rem 1.5rem;
 }
 
+.contact-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.contact-bg.hidden {
+  display: none;
+}
+
+.contact-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  padding: 1.5rem;
+}
+
+.contact-box h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.contact-box input {
+  padding: 0.4rem 0;
+  margin-bottom: 1rem;
+}
+
+.contact-box textarea {
+  height: 5rem;
+}
+
+.contact-box input, .contact-box textarea {
+  width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+.contact-box #vorname, .contact-box #nachname, .contact-box #email, .contact-box #nachricht {
+  position: relative;
+}
+
+.contact-box #vorname label, .contact-box #nachname label, .contact-box #email label, .contact-box #nachricht label {
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+  left: 0;
+}
+
+.contact-box #vorname input:focus ~ label, .contact-box #vorname textarea:focus ~ label, .contact-box #nachname input:focus ~ label, .contact-box #nachname textarea:focus ~ label, .contact-box #email input:focus ~ label, .contact-box #email textarea:focus ~ label, .contact-box #nachricht input:focus ~ label, .contact-box #nachricht textarea:focus ~ label {
+  top: -12px;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.contact-box button {
+  border: 0;
+}
+
 #products {
   background: url("../img/nif-logo-bg.svg") no-repeat;
   background-size: cover;

@@ -1,0 +1,57 @@
+.contact-bg
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0,0,0,.8)
+  z-index: 999
+
+.contact-bg.hidden
+  display: none
+
+.contact-box
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background: #FFF
+  border-radius: 10px
+  width: 400px
+  height: 500px
+  padding: 1.5rem
+
+  h2
+    text-align: center
+    padding-bottom: 1.5rem
+
+  input
+    padding: 0.4rem 0
+    margin-bottom: 1rem
+
+  textarea
+    height: 5rem
+
+  input, textarea
+    width: 100%
+    box-shadow: none
+    outline: none
+    border: none
+    border-bottom: 1px solid #999
+
+  #vorname, #nachname, #email, #nachricht
+    position: relative
+
+    label
+      position: absolute
+      top: 10px
+      pointer-events: none
+      left: 0
+
+    input:focus ~ label, textarea:focus ~ label
+      top: -12px
+      left: 0
+      font-size: 0.8rem
+
+  button
+    border: 0
