@@ -668,12 +668,17 @@ input[type="button"]:focus {
 }
 
 a {
+  outline: none;
+  text-decoration: none;
+}
+
+footer a {
   position: relative;
   outline: none;
   text-decoration: none;
 }
 
-a::before {
+footer a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -681,12 +686,11 @@ a::before {
   bottom: 0;
   left: 0;
   background-color: #027D92;
-  visibility: visible;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
 
-a:hover::before, a:focus::before, a:active::before {
+footer a:hover::before, footer a:focus::before, footer a:active::before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
