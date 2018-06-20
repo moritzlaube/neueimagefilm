@@ -43,7 +43,19 @@
     border-bottom: 1px solid #999
     color: #999
 
-  form > div
+  input:focus, textarea:focus
+    border-bottom: 2px solid $primary-text 
+
+  label
+    font-size: 0.6rem
+    text-transform: uppercase
+    letter-spacing: 2px
+
+  input:focus::placeholder, textarea:focus::placeholder
+    transition: opacity 0.25s ease
+    opacity: 0
+
+//  form > div
     position: relative
 
   label

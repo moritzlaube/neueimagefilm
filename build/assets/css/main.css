@@ -797,6 +797,43 @@ p, a, textarea, input, label {
   font-weight: 300;
   color: #027D92;
   margin: 0 0 1rem 0;
+  padding: 0;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #999;
+  margin: 0;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #999;
+  margin: 0;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #999;
+  margin: 0;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #999;
+  margin: 0;
   font-size: 1rem;
   text-rendering: optimizeLegibility;
 }
@@ -1101,23 +1138,38 @@ footer a {
   color: #999;
 }
 
-.contact-box form > div {
-  position: relative;
+.contact-box input:focus, .contact-box textarea:focus {
+  border-bottom: 2px solid #027D92;
 }
 
 .contact-box label {
-  position: absolute;
-  top: 10px;
-  pointer-events: none;
-  left: 0;
-  color: #999;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.contact-box input:focus + label, .contact-box textarea:focus + label {
-  top: -15px;
-  left: 0;
-  font-size: 0.8rem;
-  color: #027D92;
+.contact-box input:focus::-webkit-input-placeholder, .contact-box textarea:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  opacity: 0;
+}
+
+.contact-box input:focus:-ms-input-placeholder, .contact-box textarea:focus:-ms-input-placeholder {
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  opacity: 0;
+}
+
+.contact-box input:focus::-ms-input-placeholder, .contact-box textarea:focus::-ms-input-placeholder {
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  opacity: 0;
+}
+
+.contact-box input:focus::placeholder, .contact-box textarea:focus::placeholder {
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  opacity: 0;
 }
 
 #products {
