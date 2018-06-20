@@ -792,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-p, a {
+p, a, textarea, input, label {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: #027D92;
@@ -1078,6 +1078,10 @@ footer a {
   padding-bottom: 1.5rem;
 }
 
+.contact-box button {
+  border: 0;
+}
+
 .contact-box input {
   padding: 0.4rem 0;
   margin-bottom: 1rem;
@@ -1094,27 +1098,26 @@ footer a {
   outline: none;
   border: none;
   border-bottom: 1px solid #999;
+  color: #999;
 }
 
-.contact-box #vorname, .contact-box #nachname, .contact-box #email, .contact-box #nachricht {
+.contact-box form > div {
   position: relative;
 }
 
-.contact-box #vorname label, .contact-box #nachname label, .contact-box #email label, .contact-box #nachricht label {
+.contact-box label {
   position: absolute;
   top: 10px;
   pointer-events: none;
   left: 0;
+  color: #999;
 }
 
-.contact-box #vorname input:focus ~ label, .contact-box #vorname textarea:focus ~ label, .contact-box #nachname input:focus ~ label, .contact-box #nachname textarea:focus ~ label, .contact-box #email input:focus ~ label, .contact-box #email textarea:focus ~ label, .contact-box #nachricht input:focus ~ label, .contact-box #nachricht textarea:focus ~ label {
-  top: -12px;
+.contact-box input:focus + label, .contact-box textarea:focus + label {
+  top: -15px;
   left: 0;
   font-size: 0.8rem;
-}
-
-.contact-box button {
-  border: 0;
+  color: #027D92;
 }
 
 #products {
