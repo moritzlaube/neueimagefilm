@@ -16,30 +16,32 @@
 
 <body>
 <!-- Contact Form -->
-	<div class="contact-bg">
+	<div id="contact-bg" class="contact-bg hidden">
 		<div class="contact-box">
+			<a href="javascript:void(0);" onClick="hideForm()"><i class="fas fa-times-circle fa-lg"></i></a>
 			<form action="">
 				<h2>Schreiben Sie uns</h2>
 				<div>
-					<input type="name" id="surname" name="surname">
+					<input type="text" placeholder="Vorname" id="surname" name="Vorname" required>
 					<label for="surname">Vorname</label>
 				</div>
 				<div>
-					<input type="text" id="lastname" name="lastname">
+					<input type="text" placeholder="Nachname" id="lastname" name="Nachname" required>
 					<label for="lastname">Nachname</label>
 				</div>
 				<div>
-					<input type="email" id="mail" name="mail">
+					<input type="email" placeholder="Email" id="mail" name="Email" required>
 					<label for="mail">Email</label>
 				</div>
 				<div>
-					<textarea id="msg" name="user_message"></textarea>
+					<textarea placeholder="Ihre Nachricht" id="msg" name="Nachricht" required></textarea>
 					<label for="msg">Ihre Nachricht</label>
 				</div>
 				<button type="submit">Senden</button>
 			</form>
 		</div>
 	</div>
+
 <!-- Parallax Section -->
 	<div class="parallax">
 		<header>
@@ -60,7 +62,7 @@
 			<div class="header-logo">
 					<img src="assets/img/neueimagefilm-logo@2x.png" alt="Neue Imagefilm Logo">
 					<h2>Wir können <span id="myWords"></span>.</h2>
-					<button>Kontakt</button>
+					<button onclick="showForm()">Kontakt</button>
 			</div>
 
 <!-- Bouncing Arrow -->
@@ -171,7 +173,7 @@
 					<div class="cta-content">
 						<h2>Lassen Sie uns darüber sprechen</h2>
 						<p>Rufen Sie einfach spontatn durch und erzählen Sie uns, was Sie mit Ihrem Video erreichen wollen.</p>
-						<button>Kontakt</button>
+						<button onclick="showForm()">Kontakt</button>
 					</div>
 					<img src="assets/img/contact-us@2x.png" alt="">
 				</div>
@@ -269,7 +271,7 @@
 
 
 <!-- MyScripts -->
-
+<script src="assets/js/scripts-min.js"></script>
 
 </body>
 </html>
