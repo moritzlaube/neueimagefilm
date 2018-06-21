@@ -1089,25 +1089,31 @@ footer a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-}
-
-.contact-bg.hidden {
+  background-color: black;
+  opacity: .8;
+  z-index: 998;
   display: none;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .contact-box {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
   background: #FFF;
   border-radius: 10px;
   width: 400px;
   height: 500px;
   padding: 1.5rem;
+  margin: 0;
+  display: none;
+  opacity: 0;
+  z-index: 999;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .contact-box .fa-times-circle {

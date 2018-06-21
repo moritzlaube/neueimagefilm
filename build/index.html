@@ -16,9 +16,9 @@
 
 <body>
 <!-- Contact Form -->
-	<div id="contact-bg" class="contact-bg hidden">
+	<div class="contact-bg"></div>
 		<div class="contact-box">
-			<a href="javascript:void(0);" onClick="hideForm()"><i class="fas fa-times-circle fa-lg"></i></a>
+			<a class="close-contact" href="javascript:void(0);"><i class="fas fa-times-circle fa-lg"></i></a>
 			<form action="">
 				<h2>Schreiben Sie uns</h2>
 				<div>
@@ -40,7 +40,6 @@
 				<button type="submit">Senden</button>
 			</form>
 		</div>
-	</div>
 
 <!-- Parallax Section -->
 	<div class="parallax">
@@ -62,7 +61,7 @@
 			<div class="header-logo">
 					<img src="assets/img/neueimagefilm-logo@2x.png" alt="Neue Imagefilm Logo">
 					<h2>Wir können <span id="myWords"></span>.</h2>
-					<button onclick="showForm()">Kontakt</button>
+					<button class="open-contact">Kontakt</button>
 			</div>
 
 <!-- Bouncing Arrow -->
@@ -173,7 +172,7 @@
 					<div class="cta-content">
 						<h2>Lassen Sie uns darüber sprechen</h2>
 						<p>Rufen Sie einfach spontatn durch und erzählen Sie uns, was Sie mit Ihrem Video erreichen wollen.</p>
-						<button onclick="showForm()">Kontakt</button>
+						<button class="open-contact">Kontakt</button>
 					</div>
 					<img src="assets/img/contact-us@2x.png" alt="">
 				</div>
@@ -271,7 +270,7 @@
 
 
 <!-- MyScripts -->
-<script src="assets/js/scripts-min.js"></script>
+<script type="text/javascript" src="assets/js/jq-scripts-min.js"></script>
 
 </body>
 </html>
