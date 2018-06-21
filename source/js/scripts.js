@@ -1,3 +1,7 @@
+/*****************
+jQuery
+*****************/
+
 $(document).ready(function () {
   //open contact form by clicking buttons with class of open-contact
   $('.open-contact').click(function(){
@@ -14,5 +18,14 @@ $(document).ready(function () {
       $('.contact-box').css('display', 'none');
     });
     $('.contact-bg').fadeOut(500);
+  });
+
+  // Smooth scrolling
+  $('.downArrow').click(function(e){
+
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $('#products').offset().top
+    })
   });
 });

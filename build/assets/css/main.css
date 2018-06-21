@@ -578,6 +578,11 @@ i {
   margin: 0 auto;
 }
 
+/*Initial state for ScrollReveal.js */
+.sr .fooReveal {
+  visibility: hidden;
+}
+
 .button,
 button,
 input[type="submit"],
