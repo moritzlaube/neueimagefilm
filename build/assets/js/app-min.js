@@ -1,1 +1,1 @@
-window.sr=ScrollReveal(),sr.isSupported()&&document.documentElement.classList.add("sr"),sr.reveal(".products-title");
+window.sr=ScrollReveal({reset:!0}),sr.isSupported()&&document.documentElement.classList.add("sr"),sr.reveal(".products-title");
