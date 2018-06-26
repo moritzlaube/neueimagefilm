@@ -954,7 +954,7 @@ footer a {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -989,14 +989,14 @@ footer a {
   min-width: 750px;
 }
 
-.page-content {
+.parallax-cover {
   background: #fff;
-  display: block;
   position: absolute;
-  top: 100%;
+  top: 100vh;
   left: 0;
   right: 0;
-  z-index: 2;
+  height: 1000px;
+  z-index: 1;
 }
 
 .parallax__layer__0 {
@@ -1225,6 +1225,14 @@ footer a {
   font-size: 0.8rem;
   color: #027D92;
   opacity: 1;
+}
+
+.page-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 #products {

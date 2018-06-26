@@ -1,10 +1,9 @@
 .parallax
   perspective: 100px
   height: 100vh
-  //I moved overflow to _base for the body element to get ScrollReveal to work
   overflow-x: hidden
   overflow-y: auto
-  position: absolute
+  position: relative
   top: 0
   left: 0
   right: 0
@@ -38,15 +37,14 @@
   min-width: 750px
 
 
-.page-content
+.parallax-cover
   background: #fff
-  display: block
   position: absolute
-  top: 100%
+  top: 100vh
   left: 0
   right: 0
-  z-index: 2
-
+  height: 1000px
+  z-index: 1
 
 
 $parallax__layers: 5
