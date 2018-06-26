@@ -995,7 +995,7 @@ footer a {
   top: 100vh;
   left: 0;
   right: 0;
-  height: 1000px;
+  height: 100vh;
   z-index: 1;
 }
 
@@ -1089,7 +1089,7 @@ footer a {
 }
 
 .contact-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1228,10 +1228,7 @@ footer a {
 }
 
 .page-content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
+  position: relative;
   z-index: 2;
 }
 
