@@ -1,14 +1,19 @@
 .parallax
   perspective: 100px
-  height: 100vh
-  //I moved overflow to _base for the body element to get ScrollReveal to work
-  overflow-x: hidden
-  overflow-y: scroll
+  //height: 100vh
   position: relative
+  //overflow-x: hidden
+  //overflow-y: auto
   top: 0
   left: 0
   right: 0
   bottom: 0
+
+
+html
+    overflow: hidden
+    height: 100%
+    //overflow-y: auto
 
 
 .parallax__layer
