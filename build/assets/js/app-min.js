@@ -1,1 +1,1 @@
-window.sr=ScrollReveal({reset:!0}),sr.isSupported()&&document.documentElement.classList.add("sr"),sr.reveal(".products-title");
+window.sr=ScrollReveal({reset:!0}),sr.isSupported()&&document.documentElement.classList.add("sr"),sr.reveal(".products-title",{duration:500,scale:1}),sr.reveal(".cards",{duration:500,scale:1}),sr.reveal(".avatar",{duration:1e3},100),sr.reveal(".whoweare-title",{duration:500,scale:1});

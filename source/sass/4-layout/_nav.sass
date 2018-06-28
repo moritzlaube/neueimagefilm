@@ -1,5 +1,17 @@
+#nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
+  background: white
+  box-shadow: 10px 10px 10px -10px rgba(0,0,0, 0.2)
+
+
 .main-nav
   display: flex
+  align-items: center
+  height: 6rem
   margin: 0
   padding: 0
 
@@ -13,9 +25,10 @@
     display: block
     text-decoration: none
     text-transform: uppercase
+    margin-top: 1rem
     &:not(.nav-logo)
       padding: 1rem 2rem
 
   .nav-logo
-    margin-top: 1rem
+    //margin-top: 0rem
     width: 20rem

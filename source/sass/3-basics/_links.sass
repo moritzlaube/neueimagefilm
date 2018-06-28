@@ -3,12 +3,13 @@ a
   text-decoration: none
 
 
+.main-nav a,
 footer a
   position: relative
   outline: none
   text-decoration: none
 
-  &::before
+  &:not(.nav-logo)::before
     content: ""
     position: absolute
     width: 100%
@@ -23,5 +24,5 @@ footer a
 
   &:hover::before,
   &:focus::before,
-  &:active::before
+  &:active::before,
     transform: scaleX(1)
