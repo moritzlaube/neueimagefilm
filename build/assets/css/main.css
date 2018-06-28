@@ -592,6 +592,8 @@ input[type="button"] {
   padding: 0.4rem 2rem;
   margin-top: 1.5rem;
   color: #fff;
+  outline: 0;
+  border: 0;
   text-align: center;
   font-family: Oswald, sans-serif;
   font-size: 1rem;
@@ -677,13 +679,15 @@ a {
   text-decoration: none;
 }
 
+.main-nav a,
 footer a {
   position: relative;
   outline: none;
   text-decoration: none;
 }
 
-footer a::before {
+.main-nav a:not(.nav-logo)::before,
+footer a:not(.nav-logo)::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -695,7 +699,10 @@ footer a::before {
   transform: scaleX(0);
 }
 
-footer a:hover::before, footer a:focus::before, footer a:active::before {
+.main-nav a:hover::before, .main-nav a:focus::before, .main-nav a:active::before,
+footer a:hover::before,
+footer a:focus::before,
+footer a:active::before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -859,10 +866,25 @@ hr {
   height: 0;
 }
 
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: white;
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 6rem;
   margin: 0;
   padding: 0;
 }
@@ -880,6 +902,7 @@ hr {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .main-nav a:not(.nav-logo) {
@@ -887,7 +910,6 @@ hr {
 }
 
 .main-nav .nav-logo {
-  margin-top: 1rem;
   width: 20rem;
 }
 
@@ -949,90 +971,63 @@ footer a {
 }
 
 .parallax {
-  -webkit-perspective: 100px;
-  perspective: 100px;
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.clearfix {
-  height: 100%;
-  overflow: scroll;
 }
 
 .parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax__layer img {
-  display: block;
-  position: absolute;
-  bottom: 0;
-}
-
-.header-logo {
-  position: absolute;
-  left: 50vw;
-  top: -40vh;
-  -webkit-transform: translateZ(-200px) translateX(-50%) scale(2.5);
-  transform: translateZ(-200px) translateX(-50%) scale(2.5);
-  text-align: center;
-}
-
-.header-logo img {
-  max-width: 100%;
-  min-width: 750px;
-}
-
-.parallax::after {
-  content: '';
-  background: #fff;
-  display: block;
-  position: relative;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2;
+  -webkit-transition: initial;
+  transition: initial;
 }
 
 .parallax__layer__0 {
-  -webkit-transform: translateZ(-250px) scale(3.5);
-  transform: translateZ(-250px) scale(3.5);
+  background-image: url("../img/skyline_layer_0@2x.png");
+  background-position: center 0px;
 }
 
 .parallax__layer__1 {
-  -webkit-transform: translateZ(-200px) scale(3);
-  transform: translateZ(-200px) scale(3);
+  background-image: url("../img/skyline_layer_1@2x.png");
+  background-position: center 0px;
 }
 
 .parallax__layer__2 {
-  -webkit-transform: translateZ(-150px) scale(2.5);
-  transform: translateZ(-150px) scale(2.5);
+  background-image: url("../img/skyline_layer_2@2x.png");
+  background-position: center 0px;
 }
 
 .parallax__layer__3 {
-  -webkit-transform: translateZ(-100px) scale(2);
-  transform: translateZ(-100px) scale(2);
+  background-image: url("../img/skyline_layer_3@2x.png");
+  background-position: center 0px;
 }
 
-.parallax__layer__4 {
-  -webkit-transform: translateZ(-50px) scale(1.5);
-  transform: translateZ(-50px) scale(1.5);
+.header-logo {
+  position: fixed;
+  left: 50vw;
+  top: 10vh;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.parallax__layer__5 {
-  -webkit-transform: translateZ(0px) scale(1);
-  transform: translateZ(0px) scale(1);
+.header-logo img {
+  min-width: 500px;
+}
+
+#myWords {
+  -webkit-transition: initial;
+  transition: initial;
 }
 
 .cards {
@@ -1235,9 +1230,7 @@ footer a {
 
 .page-content {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
+  z-index: 1;
 }
 
 #products {
