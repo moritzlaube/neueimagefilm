@@ -3,19 +3,28 @@ jQuery
 *****************/
 
 $(document).ready(function () {
-
+  var stickyTop = $('.page-content').offset().top;
   //WordsRotator
   wordsRotator();
   //Parallax effect
   $(window).scroll(function() {
     parallax();
     //Logo fadeOut
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 250) {
       $('.header-logo').css('opacity', '0')
     }
     else {
       $('.header-logo').css('opacity', '1')
+    };
+
+    //Fading In Nav
+    if ($(this).scrollTop() >= stickyTop) {
+      $('#nav').removeClass('hide');
     }
+    else {
+      $('#nav').addClass('hide');
+    };
+
   });
 
   function parallax() {
